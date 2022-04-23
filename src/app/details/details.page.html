@@ -1,14 +1,16 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title color="black">Details</ion-title>
-    <ion-buttons>
-    </ion-back-button defaultHref="home">
-      <ion-icon name="globe"></ion-icon>
-    </ion-back-button>
+    <ion-title>Detalles</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="movies"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
- 
+  <ion-card>
+    <ion-card-content>
+      <img src="{{movie.image_thumbnail_path}}" alt="">
+    </ion-card-content>
+</ion-card>
 </ion-content>

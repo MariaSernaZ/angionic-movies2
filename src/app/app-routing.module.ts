@@ -12,12 +12,16 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'details',
+    path: 'details/:id',
     loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
   },
   {
     path: 'movies',
     loadChildren: () => import('./movies/movies.module').then( m => m.MoviesPageModule)
+  },
+  {
+    path: 'movie-details',
+    loadChildren: () => import('./movie-details/movie-details.module').then( m => m.MovieDetailsPageModule)
   },
 ];
 
